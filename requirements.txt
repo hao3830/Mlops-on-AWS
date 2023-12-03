@@ -1,0 +1,5 @@
+scikit-learn==1.3.2
+boto3==1.33.6
+sagemaker==2.199.0
+ipykernel==6.27.1
+python-dotenv==1.0.0
