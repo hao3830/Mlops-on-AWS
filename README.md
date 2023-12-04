@@ -1,4 +1,3 @@
-
 # MLOps on AWS Repository
 
 ## Overview
@@ -29,8 +28,12 @@ pip install -r requirements.txt
 
 ## Examples
 
-1. [SageMaker](#sagemaker)
-    - [sklearn_script.ipynb](#sklearn-script)
+### Table of Contents
+
+| Example | Description |
+| ------- | ----------- |
+| [SageMaker](#sagemaker) | Demonstrates the use of AWS SageMaker for end-to-end machine learning workflows. |
+| [CI/CD](#ci-cd) | Sets up a simple AWS CI/CD pipeline with EC2, ECR, and GitHub Actions. |
 
 ### SageMaker
 
@@ -45,3 +48,8 @@ This example notebook (`examples/sagemaker/sklearn_script.ipynb`) demonstrates t
 
 Feel free to explore and modify the notebook based on your specific use case.
 
+### CI/CD
+
+#### aws_cicd_setup.md
+
+This example (`examples/ci-cd/aws_cicd_setup.md`) provides a simple setup for AWS CI/CD using EC2, ECR, and GitHub Actions. The CI/CD pipeline automates the build and deployment process, ensuring efficient development workflows. Follow the instructions in the document to implement this CI/CD setup for your project.
