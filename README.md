@@ -4,28 +4,6 @@
 
 This repository is a guide to setting up MLOps (Machine Learning Operations) on AWS, focusing on streamlining the deployment and management of machine learning models. The repository includes examples and templates to help you integrate MLOps practices into your machine learning workflows.
 
-## Prerequisites
-
-Before getting started, ensure you have the necessary credentials and configurations. Create a `.env` file in the root of your project with the following variables:
-
-```env
-AWS_ARN_ROLE=
-AWS_DEFAULT_REGION=
-BUCKET_NAME=
-AWS_ACCESS_KEY_ID=
-AWS_SECRET_ACCESS_KEY=
-```
-
-Make sure to fill in the values for each variable based on your AWS account and resources.
-
-## Installation
-
-To install the required dependencies, run the following command:
-
-```bash
-pip install -r requirements.txt
-```
-
 ## Examples
 
 ### Table of Contents
