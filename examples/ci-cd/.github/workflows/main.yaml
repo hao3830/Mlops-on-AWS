@@ -1,0 +1,35 @@
+name: workflow
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'examples/ci-cd/**'
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  ci:
+    name: CI
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Run unit tests
+        run: echo "Unit tests"
+  
+  # ecr-pushing:
+  #   name: ECR Pushing
+  #   needs: ci
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v3
+      
+  #     - name: ECR Login
+  #       id: login-ecr
+  #       uses: aws-actions/amazon-ecr-login@v1
